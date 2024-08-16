@@ -1,4 +1,5 @@
 flag = 1
+document.addEventListener('DOMContentLoaded', win_loss());
 function win_loss(){
 
     let btn1 = document.querySelector('#mybtn1').innerHTML;
