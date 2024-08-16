@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <h1>Tic-Tac-Toe</h1>
+        
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            gap: 10px;
+            margin: 20px auto;
+            max-width: 330px;
+        }
+
+        .grid-container button {
+            width: 100px;
+            height: 100px;
+            font-size: 24px;
+            cursor: pointer;
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .grid-container button:hover {
+            background-color: #e0e0e0;
+        }
+
+        .grid-container button:disabled {
+            background-color: #ddd;
+            cursor: not-allowed;
+        }
+
+        #myLabel {
+            font-size: 18px;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        #reset, .myLable {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        #reset:hover {
+            background-color: #0056b3;
+        }
+    </style>    
+        
+</head>
+<body>
+    <div class="grid-container">
+        <button onclick="toggle1(); win_loss()" id = mybtn1></button>
+        <button onclick="toggle2(); win_loss()" id = mybtn2></button>
+        <button onclick="toggle3(); win_loss()" id = mybtn3></button>
+        <button onclick="toggle4(); win_loss()" id = mybtn4></button>
+        <button onclick="toggle5(); win_loss()" id = mybtn5></button>
+        <button onclick="toggle6(); win_loss()" id = mybtn6></button>
+        <button onclick="toggle7(); win_loss()" id = mybtn7></button>
+        <button onclick="toggle8(); win_loss()" id = mybtn8></button>
+        <button onclick="toggle9(); win_loss()" id = mybtn9></button>
+        <br />
+        <button onclick="reset()" id = reset>Reset</button>
+        <br />
+        
+    </div>
+    <centre><label id="myLabel">Start the Game !!</label></centre>
+    <script src="tictactoe.js"></script>
+</body>
+</html>
